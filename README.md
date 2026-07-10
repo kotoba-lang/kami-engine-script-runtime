@@ -1,3 +1,5 @@
+> **Scaffold / not the implementation SSoT (ADR-2607102200).** Canonical: `kami-engine-host-rs + kami-input-map`.
+
 # kotoba-lang/kami-engine-script-runtime
 
 Zero-dep portable `.cljc` — restored from the legacy `kami-engine/kami-engine-script-runtime` Rust crate
