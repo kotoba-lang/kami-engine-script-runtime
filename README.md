@@ -1,19 +1,17 @@
-> **Scaffold / not the implementation SSoT (ADR-2607102200).** Canonical: `kami-engine-host-rs + kami-input-map`.
-
 # kotoba-lang/kami-engine-script-runtime
 
-Zero-dep portable `.cljc` — restored from the legacy `kami-engine/kami-engine-script-runtime` Rust crate
-(deleted in the kotoba-lang Rust removal) as part of the **clj-wgsl migration** (ADR-2607010930,
-`com-junkawasaki/root`).
+> **Archived scaffold (ADR-2607102200 addendum 8–9).**  
+> This package is a clj-wgsl migration placeholder and is **not** the implementation SSoT.
+> west group: `archived` (skipped by default `west update`).
 
-## Status
+## Where to go instead
 
-Scaffold only — the CLJC restoration is pending. This repo provides the home for the
-zero-dep portable `.cljc` contracts / data interpreters / EDN IR that replace the deleted
-Rust crate. Native execution (wgpu / wasmtime / wasmi) stays substrate.
+| need | package |
+|---|---|
+| Browser WebGPU executor | `kotoba-lang/webgpu` |
+| Game browser host (ECS/input/ui/audio) | `kotoba-lang/host` |
+| Engine SDK (ECS/render-IR) | `kotoba-lang/kami-engine-sdk` |
+| Input map | `kotoba-lang/kami-engine-input-map` |
+| Domain IR (gpu/webgl/dance/…) | sibling `kotoba-lang/*` packages |
 
-## Develop
-
-```bash
-clojure -M:test
-```
+Do not add new code here.
